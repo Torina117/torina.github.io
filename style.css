@@ -1,0 +1,292 @@
+*{
+    font-family: 'Times New Roman', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #faf9f9;
+    color: #faf9f9;
+}
+
+#header{
+    
+}
+
+.container{
+    padding: 8px 9%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.torina_exhibition{
+    color: #262525;
+    font-size: 35px;
+    padding-left: 35px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px 10px;
+}
+
+nav ul li a{
+    color: #3a3636;
+    text-decoration: none;
+    font-size: 18px;
+    position:relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #080808;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+#about{
+    padding: 50px 0;
+    color: #675f5f;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hp_content_1{
+    flex-basis: 36%;
+}
+
+.hp_content_1 img{
+    width: 150%;
+    border-radius: 5px;
+}
+
+.hp_content_2{
+    flex-basis: 40%;
+    padding-top: 38px;
+}
+
+.hp_title{
+    font-size: 30px;
+    font-weight: 600;
+    color: #454242;
+    padding-bottom: 10px;
+}
+
+.hp_content{
+    color: #686161;
+    font-size: 17px;
+    padding-top: 10px;
+}
+
+.hp_content_a{
+    color: #686161;
+    font-size: 17px;
+    padding-top: 18px;
+}
+
+.hp_footer{
+    color: #7e7777;
+    font-size: 17px;
+    padding-top: 20px;
+}
+
+.copyright{
+    color: #080808;
+    display: flex;
+    justify-content: center;
+    text-size: 10px;
+    width: 100%;
+    padding: 25px 0;
+}
+
+
+
+
+#portfolio{
+    padding: 30px 0;
+}
+
+.photo_and_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 在横轴上居中对齐 */
+}
+
+.photo{
+    display: flex;
+    justify-content: center;
+}
+
+.photo img{
+    width: 57%;
+    border-radius: 4px;
+}
+
+.photo_a{
+    display: flex;
+    justify-content: center;
+}
+
+.photo_a img{
+    width: 45%;
+    border-radius: 4px;
+}
+
+.altext{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 120px;
+}
+
+.altext .text{
+    color: #696565e8;
+    padding-top: 6px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+.text{
+    color: #08080880;
+    display: block; /* 将段落元素转换为块级元素 */
+    margin: 0 auto; /* 居中显示 */
+    width: 100%; /* 设定段落的宽度 */
+    text-align: center; /* 内容居中 */
+}
+
+
+
+
+
+
+.contact_info{
+    color: #454242;
+    margin-top: 5px;
+    padding-left: 0px;
+}
+
+.contact_info p{
+    font-size: 16px;
+}
+
+.sub_title{
+    font-size: 25px;
+    color: #454242;
+}
+
+.ins_icon{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 15px;
+    transition: transform 0.5s;
+}
+
+.ins_icon:hover{
+    transform: translateY(-5px);
+}
+
+.end{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact_info{
+    flex-basis: 40%;
+    padding-left: 220px;
+}
+
+.social_icon{
+    flex-basis: 30%;
+}
+
+
+
+
+
+#me_info{
+    padding: 50px 0;
+    color: #675f5f;
+}
+
+.at{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.me_content_1{
+    flex-basis: 35%;
+}
+
+.me_content_1 img{
+    width: 100%;
+    border-radius: 30px;
+    padding-left: 100px;
+}
+
+.me_content_2{
+    flex-basis: 60%;
+    padding-top: 40px;
+    padding-left: 5px;
+}
+
+.me_title{
+    font-size: 24px;
+    font-weight: 600;
+    color: #454242;
+    padding-bottom: 10px;
+}
+
+.me_content{
+    color: #686161;
+    font-size: 19px;
+    padding-top: 10px;
+}
+
+.me_content_a{
+    color: #686161;
+    font-size: 21px;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(50, 143, 81); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
